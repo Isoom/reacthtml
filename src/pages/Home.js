@@ -46,10 +46,7 @@ class Home extends React.Component {
 						</div>	
 		
 					</main>
-			
-					<footer>
-		
-					</footer>
+					
 		
 				</div>
 		

@@ -97,7 +97,13 @@ class Extra extends React.Component {
 							<dt>Laktosfritt</dt>
 							<dd>- Avokdo sushi</dd>
 						</dl>
-			
+
+
+
+						<h2>Like Button</h2>
+						
+
+
 					</div>
 		
 				</div>
