@@ -7,16 +7,19 @@ import Tider from "./pages/Tider";
 import Extra from "./pages/Extra";
 
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import React from "react";
 import './App.css';
 
-
 function App() {
+	
   return (
+
 	<div>
+	
 		<Router>
 
 			<Routes>
-				<Route exact path="/index.html" element={<Home />} />
+				<Route exact path="/index.html" element={<Home />}/>
 				<Route path="/Kontakt.html" element={<Kontakt />} />
 				<Route path="/Bilder.html" element={<Bilder />} />
 				<Route path="/Dagens.html" element={<Dagens />} />
@@ -27,9 +30,12 @@ function App() {
 			</Routes>
 		</Router>
 		
+		
 	</div>
-  )
+
+  );
 	
 }
+
 
 export default App;

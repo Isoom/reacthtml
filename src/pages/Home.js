@@ -42,6 +42,8 @@ class Home extends React.Component {
 								<h1>RESTAURANG</h1>
 		
 							</div>
+
+							
 		
 						</div>	
 		

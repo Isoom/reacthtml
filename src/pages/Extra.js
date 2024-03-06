@@ -1,7 +1,24 @@
 import React from "react";
 
 class Extra extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			liked: false
+		};
+		this.handleLikeClick = this.handleLikeClick.bind(this);
+	}
+	    
+	handleLikeClick() {
+		this.setState(prevState => ({
+			liked: !prevState.liked
+		}));
+	}
+
 	render() {
+
+		const { liked } = this.state;
+		
 		return (
 			<body>
 				<header>
@@ -98,15 +115,16 @@ class Extra extends React.Component {
 							<dd>- Avokdo sushi</dd>
 						</dl>
 
-
-
-						<h2>Like Button</h2>
-						
-
-
+					</div>
+					<div>
+						<button onClick={this.handleLikeClick}>
+							{liked ? "Unlike" : "Like"}
+						</button>
+						{liked && <p>You liked this!</p>}
 					</div>
 		
 				</div>
+
 			
 			</body>
 
