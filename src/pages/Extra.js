@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom";
 
 class Extra extends React.Component {
 	constructor(props) {
@@ -24,17 +25,17 @@ class Extra extends React.Component {
 				<header>
 					<h1>EXTRA</h1>
 			
-					<div class="back-button">
-						<a href="index.html">
+					<div className="back-button">
+						<NavLink to="/home">
 							<img src={require("../icons/back_arrow.png")} alt="image" class="image"></img>
-						</a>
+						</NavLink>
 					</div>
 		
 				</header>
 	
-				<div class="extraGrid">
+				<div className="extraGrid">
 		
-					<div class="table-container">
+					<div className="table-container">
 						<h2>HTML Table</h2>
 						<table>
 							<tr>
@@ -75,7 +76,7 @@ class Extra extends React.Component {
 						</table>
 					</div>
 		
-					<div class="video-container">
+					<div className="video-container">
 		
 						<video width="320" height="auto" controls>
 							<source src={require("../videos/sushi.mp4")} type="video/mp4" alt="video-of-sushi"></source>
@@ -84,7 +85,7 @@ class Extra extends React.Component {
 		
 					</div>
 		
-					<div class="eForm-container">
+					<div className="eForm-container">
 						<h2>Maila in om du har några synpunkter!</h2>
 		
 						<form action="mailto:someone@example.com" method="post" enctype="text/plain">
@@ -102,7 +103,7 @@ class Extra extends React.Component {
 		
 					</div>
 					
-					<div class="list-container">
+					<div className="list-container">
 		
 						<h2>Allergier</h2>
 						<dl>

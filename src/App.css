@@ -177,6 +177,26 @@ body {
 	margin-bottom: 0px;
 }
 
+.navLinks a{
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	margin: 40px;
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.navLinks2 a{
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	margin: 40px;
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
 /* style logo on the start menu */
 
 .logo{
@@ -211,8 +231,13 @@ body {
 }
 
 /* hovering function for the navigtion bar */
-.menu-container > div:hover {
+.navLinks a:hover {
 	text-decoration: overline;
+}
+
+
+.navLinks2 a:hover {
+	text-decoration: underline;
 }
 
 /* REMOVE? */

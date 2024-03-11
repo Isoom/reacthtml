@@ -1,32 +1,37 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom";
 
 class Home extends React.Component {
 	render() {
 		return (
 
 			<body>
-				<div class="body-bambu">
+				<div className="body-bambu">
 					<header>
-						<div class="dropdown">
+						<div className="dropdown">
 						
-							<button class="btn"><i class="fa fa-bars"></i></button>
-							<div class="content">
-								<a href="meny.html">MENY</a>
-								<a href="bilder.html">BILDER</a>
-								<a href="tider.html">TIDER</a>
-								<a href="kontakt.html">KONTAKT</a>
-								<a href="dagens.html">DAGENS</a>
-								<a href="extra.html">EXTRA</a>
-							</div>
+							<button className="btn"><i className="fa fa-bars"></i></button>
+							<div className="content">
+								<div className="navLinks-dropdown">
+									<NavLink to="/meny">MENY</NavLink>
+									<NavLink to="/bilder">BILDER</NavLink>
+									<NavLink to="/tider">TIDER</NavLink>
+									<NavLink to="/kontakt">KONTAKT</NavLink>
+									<NavLink to="/dagens">DAGENS</NavLink>
+									<NavLink to="/extra">EXTRA</NavLink>
+								</div>
+							</div>	
 						</div>
 						
-						<div class="menu-container">
-							<div><a href="meny.html" class="link-meny"><h2 class="h2">MENY</h2> </a></div>
-							<div><a href="bilder.html" class="link-meny"><h2 class="h2">BILDER</h2></a></div>
-							<div><a href="tider.html" class="link-meny"><h2 class="h2">TIDER</h2></a></div>
-							<div><a href="kontakt.html" class="link-meny"><h2 class="h2">KONTAKT</h2></a></div>
-							<div><a href="dagens.html" class="link-meny"><h2 class="h2">DAGENS</h2></a></div>
-							<div><a href="extra.html" class="link-meny"><h2 class="h2">EXTRA</h2></a></div>
+						<div className="menu-container">
+							<div className="navLinks">
+								<div><NavLink to="/meny" className="link-meny"><h2 className="h2">MENY</h2> </NavLink></div>
+								<div><NavLink to="/bilder" className="link-meny"><h2 className="h2">BILDER</h2></NavLink></div>
+								<div><NavLink to="/tider" className="link-meny"><h2 className="h2">TIDER</h2></NavLink></div>
+								<div><NavLink to="/kontakt" className="link-meny"><h2 className="h2">KONTAKT</h2></NavLink></div>
+								<div><NavLink to="/dagens" className="link-meny"><h2 className="h2">DAGENS</h2></NavLink></div>
+								<div><NavLink to="/extra" className="link-meny"><h2 className="h2">EXTRA</h2></NavLink></div>
+							</div>
 						</div>
 				
 			
@@ -34,10 +39,10 @@ class Home extends React.Component {
 		
 					<main>
 					
-						<div class="menuBox">
-							<img src={require("../icons/loggan.png")} alt="aichi-logo" class="logo"></img>
+						<div className="menuBox">
+							<img src={require("../icons/loggan.png")} alt="aichi-logo" className="logo"></img>
 						
-							<div class="menuTitle">
+							<div className="menuTitle">
 							
 								<h1>RESTAURANG</h1>
 		

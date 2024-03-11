@@ -19,13 +19,13 @@ function App() {
 		<Router>
 
 			<Routes>
-				<Route exact path="/index.html" element={<Home />}/>
-				<Route path="/Kontakt.html" element={<Kontakt />} />
-				<Route path="/Bilder.html" element={<Bilder />} />
-				<Route path="/Dagens.html" element={<Dagens />} />
-				<Route path="/Meny.html" element={<Meny />} />
-				<Route path="/Tider.html" element={<Tider />} />
-				<Route path="/Extra.html" element={<Extra />} />
+				<Route exact path="/home" element={<Home />}/>
+				<Route path="/kontakt" element={<Kontakt />} />
+				<Route path="/bilder" element={<Bilder />} />
+				<Route path="/dagens" element={<Dagens />} />
+				<Route path="/meny" element={<Meny />} />
+				<Route path="/tider" element={<Tider />} />
+				<Route path="/extra" element={<Extra />} />
 
 			</Routes>
 		</Router>

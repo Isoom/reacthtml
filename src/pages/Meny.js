@@ -1,113 +1,115 @@
 import React from "react";
-
+import { NavLink, Link } from "react-router-dom";
 class Meny extends React.Component {
 	render() {
 		return(
 			<body>
 				<header>
 					<h1>MENY</h1>
-					<div class="back-button">
-						<a href="index.html"><img src={require("../icons/back_arrow.png")} alt="image" class="image"></img></a>
+					<div className="back-button">
+						<NavLink to="/home">
+							<img src={require("../icons/back_arrow.png")} alt="image" class="image"></img>
+						</NavLink>
 					</div>
 				</header>
-				<div class="menuGrid" >
-					<div class="product">
-						<div class="food-category-title"><h2>SUSHI?</h2></div>
-						<div class="name-price " >
+				<div className="menuGrid" >
+					<div className="product">
+						<div className="food-category-title"><h2>SUSHI?</h2></div>
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 		
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 		
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 		
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 		
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 		
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 					</div>
 
-					<div class="product">
-						<div class="food-category-title"><h2>SUSHI?</h2></div>
+					<div className="product">
+						<div className="food-category-title"><h2>SUSHI?</h2></div>
 
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 			
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 			
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 							<p>brödtext</p>
 			
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 		
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 		
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 					</div>
 					
-					<div class="doubleMenu">
+					<div className="doubleMenu">
 							
-						<div class="product">
-							<div class="food-category-title"><h2>SUSHI?</h2></div>
+						<div className="product">
+							<div className="food-category-title"><h2>SUSHI?</h2></div>
 			
-							<div class="name-price " >
+							<div className="name-price " >
 								<h3> Lite sushi</h3>
 								<h3> 120 kr</h3>
 							</div>
 							<p>brödtext</p>
 				
-							<div class="name-price " >
+							<div className="name-price " >
 								<h3> Lite sushi</h3>
 								<h3> 120 kr</h3>
 							</div>
 							<p>brödtext</p>
 				
-							<div class="name-price " >
+							<div className="name-price " >
 								<h3> Lite sushi</h3>
 								<h3> 120 kr</h3>
 							</div>
@@ -115,23 +117,23 @@ class Meny extends React.Component {
 
 						</div>
 
-						<div class="product">
+						<div className="product">
 
-							<div class="food-category-title"><h2>SUSHI?</h2></div>
+							<div className="food-category-title"><h2>SUSHI?</h2></div>
 			
-							<div class="name-price " >
+							<div className="name-price " >
 								<h3> Lite sushi</h3>
 								<h3> 120 kr</h3>
 							</div>
 							<p>brödtext</p>
 			
-							<div class="name-price " >
+							<div className="name-price " >
 								<h3> Lite sushi</h3>
 								<h3> 120 kr</h3>
 							</div>
 							<p>brödtext</p>
 
-							<div class="name-price " >
+							<div className="name-price " >
 								<h3> Lite sushi</h3>
 								<h3> 120 kr</h3>
 							</div>
@@ -140,40 +142,40 @@ class Meny extends React.Component {
 
 					</div>
 
-					<div class="product">
-						<div class="food-category-title"><h2>SUSHI?</h2></div>
+					<div className="product">
+						<div className="food-category-title"><h2>SUSHI?</h2></div>
 
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 			
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>	
 
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 			
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 		
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 						</div>
 						<p>brödtext</p>
 		
-						<div class="name-price " >
+						<div className="name-price " >
 							<h3> Lite sushi</h3>
 							<h3> 120 kr</h3>
 							</div>
